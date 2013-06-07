@@ -199,9 +199,13 @@
         #define SK_B32_SHIFT    8
         #define SK_A32_SHIFT    0
     #else
-        #define SK_R32_SHIFT    0
+		/*
+		 * Change by embest
+		 * We need to support hardware format
+		 */
+        #define SK_R32_SHIFT    16 //0
         #define SK_G32_SHIFT    8
-        #define SK_B32_SHIFT    16
+        #define SK_B32_SHIFT    0 //16
         #define SK_A32_SHIFT    24
     #endif
 #endif
